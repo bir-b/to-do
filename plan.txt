@@ -13,3 +13,4 @@ expansion ideas
 - set urgency/priority of task
 - task colours/tags/groups
 - save as image/email/print
+- optional reason why task needs to be done

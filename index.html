@@ -10,13 +10,15 @@
 </head>
 <body>
 
-    <div>
-        <label for="taskInput">What needs to be done?</label>
-        <input type="text" id="taskInput" name="taskInput">
+    <div class="content-box">
+        <div>
+            <label for="task-input">I need to...</label>
+            <input type="text" id="task-input" name="task-input">
+        </div>
+        <button id="add-task" onclick="addTask()">Add!</button>
+    
+        <div id="current-tasks"></div>
     </div>
-    <button id="addTask" onclick="addTask()">Add!</button>
-
-    <div id="currentTasks"></div>
     
 </body>
 </html>
