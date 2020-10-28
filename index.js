@@ -5,6 +5,12 @@ function addTask() {
     } else {
         //function to create task...
         val.trim();
-        $("#current-tasks").append("<p>" + val + "</p>");
+        $("#current-tasks").append('<p onclick="hide(this)">' + val + '</p>');
+
+        // $("#current-tasks").append('<p');
     }
+}
+
+function hide(item) {
+    $(item).hide();
 }
