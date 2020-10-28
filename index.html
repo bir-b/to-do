@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do</title>
+    <!-- style -->
     <link rel="stylesheet" href="style.css">
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
 </head>
 <body>
-    hello wolrd :3
+
+    <div>
+      <label for="taskInput">What needs to be done?</label>
+      <input type="text" id="taskInput" name="taskInput">
+    </div>
+    <button id="addTask" onclick="addTask()">Add</button>
+
 </body>
 </html>
-
-<script src="index.js"></script>

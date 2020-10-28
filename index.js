@@ -1,5 +1,3 @@
-function test() {
-    console.log("hello");
+function addTask() {
+    console.log($("#taskInput").val());
 }
-
-test();
