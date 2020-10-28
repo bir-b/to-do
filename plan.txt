@@ -1,0 +1,15 @@
+planned features
+
+core
+- mark task as complete
+- duplicate tasks not allowed
+- edit existing task
+
+expansion ideas
+- select multiple tasks and delete
+- choose different themes/styles of page
+- tips on staying motivated/inspirational quotes
+- date due selection for tasks
+- set urgency/priority of task
+- task colours/tags/groups
+- save as image/email/print
