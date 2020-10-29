@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do</title>
+
+    <!-- styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <!-- scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="index.js"></script>
 </head>
@@ -12,9 +17,13 @@
 
     <div class="content-box">
 
+        <div class="title">
+            <h1>My To-Do</h1>
+        </div>
+
         <div class="content-inner-box">
             <div id="input-row">
-                <label for="task-input">I need to...</label>
+                <label for="task-input"><h2>I need to...</h2></label>
                 <input type="text" id="task-input" name="task-input">
                 <button id="add-task" onclick="addTask()">Add!</button>
             </div>
