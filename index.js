@@ -1,14 +1,32 @@
+let taskId = 0;
+
 function addTask() {
-    let val = $("#task-input").val();
-    if(!val) {
+    let input = $("#task-input").val();
+    if(!input) {
         console.log("Input empty!");
     } else {
         //function to create task...
-        val.trim();
-        $("#current-tasks").append('<p onclick="hide(this)">' + val + '</p>');
+        input.trim();
+        $("#current-tasks").append(createTask(input));
 
         // $("#current-tasks").append('<p');
     }
+}
+
+function createTask(input) {
+    let s = `<p id="${taskId}">${input}</p>`;
+    s = `<div class="task-box" onclick="switchStrike(this)">${s}</div>`;
+    taskId++;
+    return s;
+}
+
+function switchStrike(item) {
+    if($(item).hasClass("strike")) {
+        $(item).removeClass("strike")
+    } else {
+        $(item).addClass("strike");
+    }
+
 }
 
 function hide(item) {

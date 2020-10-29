@@ -13,7 +13,14 @@ h1 {
 }
 
 h2 {
+    font-family: 'Nothing You Could Do', cursive;
     margin: 10px;
+}
+
+p {
+    font-family: 'Indie Flower', cursive;
+    font-size: larger;
+    margin: 0;
 }
 
 .title {
@@ -43,26 +50,49 @@ h2 {
 #input-row {
     display: flex;
     flex-direction: column;
-    text-align: center;
     align-items: center;
-    width: 50%;
+    width: 100%;
 }
 
 #task-input {
     height: 30px;
     border-radius: 25px;
-    width: 100%;
+    width: 70%;
+    padding: 0px 13px 0px 13px;
 }
 
-#add-task {
+#add-button {
     margin: 10px;
-    width: 25%;
+    height: 30px;
+    border-radius: 25px;
+    width: 20%;
+    background-color: white;
+    cursor: pointer;
+}
+
+#current-tasks {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    text-align: center;
+    align-items: center;
+}
+
+.task-box {
+    width: 100%;
+    margin: 5px 0px 5px 0px;
+    background-color: white;
+    padding: 10px;
+    cursor: pointer;
 }
 
 
+/* Strikethrough text deco, to be added or removed after clicking task */
+.strike {
+    text-decoration-line: line-through;
+}
 
-
-
+/* Custom scrollbar */
 ::-webkit-scrollbar {
     width: 13px;
 }
